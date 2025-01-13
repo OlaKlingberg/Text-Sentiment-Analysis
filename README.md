@@ -6,12 +6,15 @@ This project was developed for Module 6 of the course *Introduction to Deep Lear
 ## Description
 The project aims to build a text-sentiment analysis model that outperforms TextBlob’s pre-trained sentiment analyzer, when trained and tested on reviews from Amazon, IMDB, and Yelp.
 
+## Data
+* The project makes use of two datasets:
+  * [Sentiment Labelled Sentences](https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences), housed by UC Irvine Machine Learning Repository. This dataset was used for training and evaluation (after being properly split into training and test sets).
+  * Amazon reviews Clothing, Shoes, and Jewelry, which can be accessed from the GitHub repository [Amazon Reviews'23](https://amazon-reviews-2023.github.io/). This detaset was used as a second test set.
+
 ## Key Features:
 * **Data Preprocessing**: Cleans and prepares text data for analysis, including tokenization, stop-word removal, and lemmatization.
 * **Model Development**: Explores three different kinds of models: **Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN)**, and **DistilBERT**.
 * **Performance Evaluation**: Compares the accuracy of the explored models against that of TextBlob’s sentiment analyzer.
-
-## Data Source
 
 ## Results
 The best-performing model was DistilBERT (Run 10 below), which handily beat TextBlob (Run 2) on both the two test sets used.
